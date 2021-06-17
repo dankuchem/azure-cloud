@@ -1,9 +1,9 @@
 #logging:
 #  level:
 #    org.springframework.security: DEBUG
-#petstore:
-  #service:
-    #url: ${PETSTORESERVICE_URL}
+petstore:
+  service:
+    url: ${PETSTORESERVICE_URL}
     #subscription:
     #  key: ${PETSTORESERVICE_SUBSCRIPTION_KEY}
 #server:
