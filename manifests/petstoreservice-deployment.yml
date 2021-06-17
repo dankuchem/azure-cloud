@@ -16,7 +16,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: petstoreservice
-        image: azurepetstorecr.azurecr.io/petstoreservice
+        image: dankuchemazurepetstorecr.azurecr.io/petstoreservice
         resources:
           requests:
             cpu: 100m
@@ -26,6 +26,3 @@ spec:
             memory: 256Mi
         ports:
         - containerPort: 8080
-        env:
-          - name: PETSTORESERVICE_SERVER_PORT
-            value: "8080"

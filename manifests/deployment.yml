@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: dankuchemazurecloud 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dankuchemazurecloud
+  template:
+    metadata:
+      labels:
+        app: dankuchemazurecloud 
+    spec:
+      containers:
+        - name: dankuchemazurecloud 
+          image: dankuchemazurepetstorecr.azurecr.io/dankuchemazurecloud
+          ports:
+          - containerPort: 8080
